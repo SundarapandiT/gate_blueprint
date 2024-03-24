@@ -1,0 +1,307 @@
+body {
+  font-family: Arial, sans-serif;
+
+  #root {
+    // display:grid;
+
+    .login,
+    .register {
+      height: 100vh;
+      background: url("./assets/Gate\ \(1\).png")no-repeat center rgb(5, 27, 5);
+      border: 1px solid black;
+      backdrop-filter: brightness(30%);
+
+      .wrapper {
+        margin: 150px auto;
+        max-width: 360px;
+
+        .form {
+          background-color: #94e99152;
+          max-width: 360px;
+          margin: 150px auto;
+          padding: 30px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+          h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #e65512;
+            font-weight: 600;
+            text-shadow: 1px 1px black;
+          }
+
+          input,
+          button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+          }
+
+          button[type="submit"] {
+            background-color: #0b640e;
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+          }
+
+          button[type="submit"]:hover {
+            background-color: #45a049;
+          }
+
+          .signup {
+            text-align: center;
+            color: rgb(249, 255, 255);
+            text-shadow: 1px 1px black;
+          }
+
+          .signup a {
+            color: #ca4260;
+            text-decoration: underline;
+            text-shadow: 1px 1px black;
+          }
+
+          .signup a:hover {
+            text-decoration: underline;
+          }
+
+        }
+      }
+
+
+    }
+
+    .dashboard {
+      background: url("./assets/Gate.png") no-repeat center rgb(7, 15, 43);
+      backdrop-filter: brightness(60%);
+      color: rgb(255, 255, 255);
+      h1,
+      h2,
+      h3 {
+        color: #46ace7;
+        text-shadow: 1px 1px rgb(12, 40, 100);
+      }
+
+      span {
+        color: #00ff80;
+        font-weight: 600;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 20px;
+        overflow: hidden;
+
+      }
+
+      /* Navbar styles */
+      .navbar {
+        background-color: rgb(27, 26, 85);
+        color: #fff;
+        padding: 15px 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* .navbar img
+{
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+} */
+      .navbar-left {
+        margin-left: 20px;
+
+      }
+
+      .navbar-brand {
+        font-size: 24px;
+        text-decoration: none;
+        color: #fff;
+        margin-left: 20px;
+      }
+
+      .navbar-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .navbar-right ul li {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      .navbar-right ul li a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      /* Profile section styles */
+      .profile {
+        display: flex;
+
+      }
+
+      .profile-data {
+        flex: 1;
+        padding: 20px;
+        background: rgb(255, 255, 255, 0.3);
+        border: 1px solid #007bff;
+        border-radius: 7px;
+      }
+
+      .profile-info {
+        margin-bottom: 20px;
+      }
+
+      .edit-profile {
+        text-align: center;
+      }
+
+      .edit-profile a {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      /* Profile progress section styles */
+      .profile-progress {
+        flex: 1;
+        padding: 20px;
+        background: rgb(255, 255, 255, 0.3);
+        border-radius: 7px;
+        border: 1px solid #007bff;
+        margin-left: 20px;
+      }
+
+      /* Material section styles */
+      .material {
+        margin-top: 20px;
+      }
+
+      .material-item {
+        background: rgb(255, 255, 255, 0.3);
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      .material-item h3 {
+        margin-top: 0;
+      }
+
+      .material-item p {
+        margin-bottom: 20px;
+      }
+
+      .material-item a {
+        background-color: #4657b4;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 2px solid rgb(14, 13, 73);
+      }
+
+      .material-item a:hover {
+        background-color: rgb(14, 13, 73)
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #0f0f1f;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-section {
+        flex: 1;
+      }
+
+      .footer-section h3 {
+        margin-top: 0;
+      }
+
+      /* Media Query for responsiveness */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .navbar-right {
+          margin-top: 10px;
+        }
+
+        .profile {
+          flex-direction: column;
+        }
+
+        .profile-progress {
+          margin-top: 20px;
+        }
+      }
+
+
+      .slide-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Initially hidden */
+        width: 250px;
+        height: 100%;
+        background-color: rgb(4, 3, 17);
+        color: #fff;
+        transition: left 0.3s ease;
+        z-index: 9999;
+        border: 1px solid #007bff;
+      }
+
+      .slide-menu img {
+        border-radius: 40px;
+      }
+
+      .menu-content {
+        padding: 20px;
+      }
+
+      .menu-content ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .menu-content ul li {
+        margin-bottom: 10px;
+
+      }
+
+      .menu-content ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .menu-content ul li a:hover {
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+}
