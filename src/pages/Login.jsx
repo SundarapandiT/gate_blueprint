@@ -15,7 +15,7 @@ function Login(props) {
 
     try{
       await signInWithEmailAndPassword(auth, email, pass)
-      nav('/')
+      nav('/dashboard')
     }catch(error){
       console.error('error signing in: ', error)
     }

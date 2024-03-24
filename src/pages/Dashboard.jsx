@@ -13,7 +13,7 @@ function Dashboard(props) {
     try{
       await signOut(auth)
       console.log('logging out')
-      nav('/login')
+      nav('/')
     }catch(error){
       console.error('error signing out: ',error)
     }

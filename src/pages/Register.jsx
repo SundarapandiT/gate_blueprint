@@ -21,11 +21,10 @@ function Register(props) {
         uid: res.user.uid,
         displayName,
         email,
-        discipline,
         phoneNumber
       })
 
-      nav('/')
+      nav('/dashboard')
     }catch(error){
       console.error('error creating user: ',error)
     }
@@ -38,7 +37,6 @@ function Register(props) {
         <input type="text" name="full_name" placeholder="Full Name" required />
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
-        <input type="text" name="gate_discipline" placeholder="GATE Discipline" required />
         <input type="number" name="mobile_no" placeholder="Mobile no" required />
         <button type="submit" id="registerBtn">Register</button>
         <p class="signup">Already have an account? <Link to='/login'>Login</Link></p>
