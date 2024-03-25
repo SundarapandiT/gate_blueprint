@@ -61,9 +61,8 @@ function Dashboard(props) {
           <h2>Progress Report</h2>
         </div>
       </div>
-
+       <h2>Study Materials</h2>
       <div class="material">
-        <h2>Study Materials</h2>
         <div class="material-item">
           <h3>Syllabus</h3>
           <p>View the complete GATE syllabus</p>
